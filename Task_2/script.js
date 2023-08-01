@@ -15,20 +15,20 @@ box3.addEventListener("click", () => {
     console.log("Method 1 - Box 3 color:", getComputedStyle(box3).backgroundColor);
 });
 
-// Method 2: Using a single event listener and event delegation
-document.addEventListener("click", (event) => {
-    const clickedElement = event.target;
-    if (clickedElement.classList.contains("box")) {
-        console.log("Method 2 - Box color:", getComputedStyle(clickedElement).backgroundColor);
-}
-});
+// // Method 2: Using a single event listener and event delegation
+// document.addEventListener("click", (event) => {
+//     const clickedElement = event.target;
+//     if (clickedElement.classList.contains("box")) {
+//         console.log("Method 2 - Box color:", getComputedStyle(clickedElement).backgroundColor);
+// }
+// });
 
-// Method 3: Using data attributes
-const boxes = document.querySelectorAll(".box");
-boxes.forEach((box, index) => {
-    box.setAttribute("data-box-index", index + 1);
-    box.addEventListener("click", () => {
-    const boxIndex = box.getAttribute("data-box-index");
-    console.log(`Method 3 - Box ${boxIndex} color:`, getComputedStyle(box).backgroundColor);
-});
-});
+// // Method 3: Using data attributes
+// const boxes = document.querySelectorAll(".box");
+// boxes.forEach((box, index) => {
+//     box.setAttribute("data-box-index", index + 1);
+//     box.addEventListener("click", () => {
+//     const boxIndex = box.getAttribute("data-box-index");
+//     console.log(`Method 3 - Box ${boxIndex} color:`, getComputedStyle(box).backgroundColor);
+// });
+// });

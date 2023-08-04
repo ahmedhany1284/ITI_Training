@@ -2,7 +2,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     margin: 0;
 }  
 .box {
@@ -12,7 +11,6 @@ body {
     justify-content: center;
     align-items: center;
 } 
-  /* Additional styles for visual purposes */
 #box1 {
     background-color: red;
 }

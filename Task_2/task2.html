@@ -8,9 +8,20 @@
 </head>
 <body>
     <div class="box" id="box1" style="background-color: red;"> </div>
-    <div class="box" id="box2" style="background-color: green;"></div>
-    <div class="box" id="box3" style="background-color: blue;"></div>
+    <div class="box" id="box2" style="background-color: green;",onclick></div>
+    <div class="box" id="box3" style="background-color: blue;" onclick="boxClick()"></div>
 
+<script  >
+    const box2 = document.getElementById("box2");
+    box2.addEventListener("click", () => {
+        console.log("Box 2 color: Green");
+    });
+</script>
+<script>
+    function boxClick() {
+        console.log("Box 3 color: Blue");
+    }
+</script>
 <script src="script.js"></script>
 </body>
 </html>

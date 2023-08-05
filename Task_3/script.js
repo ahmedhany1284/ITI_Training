@@ -7,8 +7,8 @@ addButton.addEventListener('click', addTask);
 function addTask() {
     const taskText = taskInput.value.trim();
     if (taskText !== '') {
-        task = document.createElement('div');
-        task.classList.add( "task");
+        const task = document.createElement('div');
+        task.className = 'task';
         task.innerHTML = `
             <span>${taskText}</span>
             <div class="task-buttons">

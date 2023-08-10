@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lerik Land</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="lerik.jpg">
+
+</head>
+<body>
+    <header>
+        <h1>Movie App</h1>
+        <input type="text" id="search" placeholder="Search movies...">
+    </header>
+    <main id="main"></main>
+    <div id="pagination">
+        <button id="prev-page">Previous</button>
+        <span id="current-page">1</span> / <span id="total-pages">1</span>
+        <button id="next-page">Next</button>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" id="modal-close">&times;</span>
+            <img id="modal-image" src="" alt="">
+            <div class="movie-details-modal">
+                <div class="details-container">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-overview"></p>
+                    <p id="modal-release"></p>
+                    <p id="modal-rating"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" id="modal-overlay"></div>
+    
+    
+<script src="script.js"></script>
+</body>
+</html>

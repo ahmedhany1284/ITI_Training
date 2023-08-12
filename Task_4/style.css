@@ -129,11 +129,6 @@ main {
     overflow-y: auto; 
     box-sizing: border-box; 
 }
-@media (max-height: 600px) {
-    .modal {
-        max-height: 90%;
-    }
-}
 
 
 .modal-overlay {
